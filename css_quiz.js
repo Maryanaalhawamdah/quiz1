@@ -624,14 +624,14 @@ function startTimer(duration, display) {
                 isAnswerToF[i]=false;
                 localStorage.setItem("isAnswerToFCss",JSON.stringify(isAnswerToF));
             }
-            window.location.href=("./rezult.html");
+            window.location.href="./rezult.html"
         }
        
     }, 1000);
 }
 
 window.onload = function () {
-    var fiveMinutes = 60 * 5,
+    var fiveMinutes = 60 * 1,
         display = document.querySelector('#time');
     startTimer(fiveMinutes, display);
 };
