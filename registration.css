@@ -1,0 +1,198 @@
+html,body{
+    overflow-y:auto;
+}
+.html {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(45deg, #7e98f5, #ffffff, rgb(194, 210, 255));
+    background-size: 400% 400%;
+    animation: animateBackground 10s ease infinite;
+  }
+  
+  .welcomeP {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  @keyframes animateBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .logo-img img {
+    height: 100px;
+    margin-left: 20px;
+  }
+  
+  .form-img {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  
+  p {
+    display: none;
+  }
+  
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    content: "✔";
+  }
+  
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    content: "✖";
+  }
+  
+  * {
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .sign-up {
+    border: 4px solid #A076F9;
+    width: 40%;
+    height: 90%;
+    margin-left: 2em;
+    border-radius: 20px;
+  
+  }
+  
+  form {
+    width: 60%;
+    margin: auto;
+  
+  }
+  
+  input {
+    width: 100%;
+    height: 25px;
+    margin-top: 8%;
+    padding: 15px;
+    border: 2px solid #6528F7;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #EDE4FF;
+    font-size: 15px;
+    color: #481cae;
+    font-weight: bold;
+  }
+  
+  input::placeholder {
+    color: #6528F7;
+    font-weight: bold;
+    opacity: 0.7;
+  }
+  
+  form #buttonID {
+    display: block;
+    border-radius: 9px;
+    background-color: #6528F7;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 8%;
+    transition: all 0.5s;
+    cursor: pointer;
+  
+  }
+  
+  #buttonID span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #buttonID span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    transition: 0.5s;
+  }
+  
+  #buttonID:hover span {
+    padding-right: 25px;
+  }
+  
+  #buttonID:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+  form select {
+    width: 100%;
+    height: 25px;
+    border: 2px solid #6528F7;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #EDE4FF;
+    color: #6528F7;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  form select::-ms-expand {
+    display: none;
+  }
+  
+  form select:hover {
+    border-color: #888;
+  }
+  
+  form select:focus {
+    border-color: #555;
+  }
+  
+  form option {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  form option:hover {
+    background-color: #f5f5f5;
+  }
+  
+  @media (max-width:1050px){
+    .form-img{
+      flex-direction: column;
+  
+    }
+  
+    form {
+      width: 60%;
+      /* margin: auto; */
+    
+    }
+    .sign-up {
+      border: 4px solid #A076F9;
+      width: 90%;
+      height: 80%;
+      border-radius: 20px;
+    }
+  } 
