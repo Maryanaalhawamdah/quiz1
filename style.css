@@ -7,12 +7,15 @@
 font-family: 'Pacifico', cursive;
 font-family: 'Signika Negative', sans-serif;
 }
-html,body{
+body{
   overflow-x:hidden;
   overflow-y: auto;
 }
 span{
   color: rgb(0, 38, 161);
+}
+.logo{
+  width:4rem;
 }
 html {
     position: fixed;
